@@ -1,0 +1,116 @@
+.navbar {
+  width: 100%;
+  padding: 18px 40px;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #61dafb;
+}
+
+.search-box input {
+  width: 250px;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  font-size: 15px;
+}
+
+/* About section */
+
+.about {
+  padding: 70px 20px;
+  text-align: center;
+  background: #222;
+  color: white;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+/* Tablet */
+
+@media (max-width: 800px) {
+  .navbar {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    padding: 20px 15px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+}
